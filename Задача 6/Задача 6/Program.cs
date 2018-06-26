@@ -11,8 +11,6 @@ namespace Задача_6
         static void Main(string[] args)
         {
             int a1, a2, a3, N, E, colEl = 0;
-            // List<Tuple<int, int>> list = new List<Tuple<int, int>>();
-          //  List<int> num = new List<int>();
             List<int> El = new List<int>();
             Console.WriteLine("введите число а1");
             while (!int.TryParse(Console.ReadLine(), out a1))
@@ -24,8 +22,9 @@ namespace Задача_6
             while (!int.TryParse(Console.ReadLine(), out a3))
                 Console.WriteLine("Введите целое число");
             Console.WriteLine("Сколько пар элементов найти?");
-            while (!int.TryParse(Console.ReadLine(), out N) || (N < 1))
-                Console.WriteLine("Введите целое положительное число");
+            while (!int.TryParse(Console.ReadLine(), out N) || (N < 1)||(N>1000))
+
+                Console.WriteLine("Введите целое положительное число меньше 1000");
             Console.WriteLine("введите число E");
             while (!int.TryParse(Console.ReadLine(), out E))
                 Console.WriteLine("Введите целое число");
